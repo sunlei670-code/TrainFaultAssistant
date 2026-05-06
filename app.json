@@ -1,0 +1,43 @@
+{
+  "expo": {
+    "name": "地铁故障处置助手",
+    "slug": "TrainFaultAssistant",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#1E3A5F"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.szmetro.trainfaultassistant",
+      "infoPlist": {
+        "NSMicrophoneUsageDescription": "用于语音输入故障描述",
+        "NSSpeechRecognitionUsageDescription": "用于离线语音识别"
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#1E3A5F"
+      },
+      "package": "com.szmetro.trainfaultassistant",
+      "permissions": [
+        "android.permission.RECORD_AUDIO",
+        "android.permission.INTERNET"
+      ]
+    },
+    "plugins": [
+      "expo-asset"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "1196c621-4021-474d-8384-a12e3c8c8857"
+      }
+    }
+  }
+}
